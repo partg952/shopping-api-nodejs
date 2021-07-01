@@ -24,7 +24,7 @@ app.get('/save-data',(req,res)=>{
     })
 })
 
-app.get('/all-data',(req,res)=>{
+app.get('/',(req,res)=>{
     Shopping.find().then((result)=>{
         res.send(result)
     })
